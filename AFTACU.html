@@ -25,18 +25,21 @@
         <div class="boxResource">
             <h2>Resources</h2>
         </div>
-        <div class="button_resource1">
-            <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">BetterUp Coaching and Mentoring Program</a></li>
-        </div>
-        <div class="button_resource2">
-            <a href="https://www.youtube.com/watch?v=bLq38_7KtP0" target="_blank">Civilain Career Models</a></li>
-        </div>
-        <div class="button_resource3">
-            <a href="https://myvector.us.af.mil/myvector/Home/Dashboard" target="_blank">MyVector</a></li>
-        </div>
-            <a href="https://www.airuniversity.af.edu/" target="_blank">Air University</a></li>
-            <a href="https://myfss.us.af.mil/USAFCommunity/s/knowledge-detail?pid=kA08300000002U7CAI" target="_blank">Civilian Tuition Assistance Program</a></li>
-        </ul>
+        <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
+            <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
+        </a>
+        <a href="https://www.youtube.com/watch?v=bLq38_7KtP0" target="_blank">
+            <button class="button resource_pill2" type="button">Civilain Career Models</button>
+        </a>
+        <a href="https://myvector.us.af.mil/myvector/Home/Dashboard" target="_blank">
+            <button class="button resource_pill3" type="button">MyVector</button>
+        </a>
+        <a href="https://www.airuniversity.af.edu/" target="_blank">
+            <button class="button resource_pill4">Air University</button>
+        </a>
+        <a href="https://myfss.us.af.mil/USAFCommunity/s/knowledge-detail?pid=kA08300000002U7CAI" target="_blank">
+            <button class="button resource_pill5" type="button">Civilian Tuition Assistance Program</button>
+        </a>
     </div>
     <div class="team">
         <div class="circle group"></div>
@@ -94,22 +97,23 @@ body{
 .resources{
     position: absolute;
     background-color: white;
-    height: 30vh;
-    width: 17vw;
+    height: 350px;
+    width: 250px;
     border-radius: 3vh;
     top:25vh;
     box-shadow:0 0 6px rgba(0,0,0,0.2);
 }
 .circle{
     display:flex;
-    height: 6vh;
-    width: 4vw;
+    height: 20%;
+    width: 25%;
     border-radius: 50%;
     background:#209A9D;
     justify-content: center;
     text-align:center;
     margin: auto;
     margin-top:5%;
+    position:relative;
 }
 .apps{
     color: white;
@@ -122,21 +126,23 @@ body{
 h2{
     color:#3B2665;
 }
-ul{
-    position: relative;
-    list-style: none;
-    margin:1vw;
+a{
+    color: #3B2665;
 }
-li {
-    position: relative;
-    color: #727272;
-    line-height:1.5;
-    border-radius:6.5vh;
-    background-color:#209A9D;
+
+.button {
+    background: #209A9D;
+    font-size: medium;
+    padding:5px 20px;
+    margin: 3px;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    color: #3B2665;
 }
-li::before {
-    content: "";
-    position: absolute;
+.pill{
+    width: 80%;
+    display: inline-block;
 }
 </style>
 
