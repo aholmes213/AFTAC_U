@@ -12,139 +12,90 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
-<body>
-    <div class="title">
-        <img src="https://usaf.dps.mil/:i:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/Background%20image.png?csf=1&web=1&e=Ac1UDF" alt="background">
-        <h1>AFTAC University</h1>
-        <p1>The Nation's Sixth Sense For Decisive Knowledge</p1>
-    </div>
-    <div class="resources">
-        <div class="circle app">
-            <span class="material-symbols-outlined apps">apps</span>
-        </div>    
-        <div class="boxResource">
-            <h2>Resources</h2>
-        </div>
-        <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
-            <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
-        </a>
-        <a href="https://www.youtube.com/watch?v=bLq38_7KtP0" target="_blank">
-            <button class="button resource_pill2" type="button">Civilain Career Models</button>
-        </a>
-        <a href="https://myvector.us.af.mil/myvector/Home/Dashboard" target="_blank">
-            <button class="button resource_pill3" type="button">MyVector</button>
-        </a>
-        <a href="https://www.airuniversity.af.edu/" target="_blank">
-            <button class="button resource_pill4">Air University</button>
-        </a>
-        <a href="https://myfss.us.af.mil/USAFCommunity/s/knowledge-detail?pid=kA08300000002U7CAI" target="_blank">
-            <button class="button resource_pill5" type="button">Civilian Tuition Assistance Program</button>
-        </a>
-    </div>
-    <div class="team">
-        <div class="circle group"></div>
-        <span class="material-symbols-outlined groups">groups</span>
-        <h2>The Team</h2>
-        <ul>
-            <li><a href="https://usaf.dps.mil/:w:/r/sites/AFTAC/AFTACU/_layouts/15/Doc.aspx?sourcedoc=%7b0AD4FA5D-5F1F-4719-BB37-3116DDDF821B%7d&file=Robinson%20Bio.docx&action=default&mobileredirect=true" target="_blank">Mr. Christopher Robinson</a></li>
-            <li><a href="https://usaf.dps.mil/:p:/r/sites/AFTAC/AFTACU/_layouts/15/Doc.aspx?sourcedoc=%7bD24D2CA5-D134-4259-B577-186BEFAF5B71%7d&file=Workforce%20Development%20Team.pptx&action=edit&mobileredirect=true" target="_blank">Ms. Agnes Bradt</a></li>
-        </ul>
-    </div>
-    <div class="courses">
-        <div class="circle school"></div>
-        <span class="material-symbols-outlined schools">school</span>
-        <h2>AFTAC U Courses</h2>
-        <ul>
-            <li><a href="https://usaf.dps.mil/sites/AFTAC/AFTACU/SitePages/LEEP%20100.aspx" target="_blank">LEEP 100</a></li>
-            <li><a href="https://usaf.dps.mil/sites/AFTAC/AFTACU/SitePages/LEEP%20200.aspx" target="_blank">LEEP 200</a></li>
-            <li><a href="https://usaf.dps.mil/sites/AFTAC/AFTACU/SitePages/LEEP-300.aspx" target="_blank">LEEP 300</a></li>
-        </ul>
-    </div>
+
 <style>
+
 body{
-    display: flex;
-    width: boundingBoxWidth;
-    height: boundingBoxHeight;
     font-family: 'lato';
 }
-.title{
-    justify-content: center;
+.home{
+    min-height: 100vh;
+    background: url(https://usaf.dps.mil/:i:/r/sites/a-staff/A1/A1H/Shared%20Documents/SharepointSystemFiles/Background%20image.png?csf=1&web=1&e=xKm2Vz) no-repeat;
+    background-size: cover;    
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+.home .content{
+    display: flex;
     align-items: center;
-    text-align: center;
-    font-size:larger;
-}
-.title img {
-    position: fixed;
-    height: 40vh;
-    width:60vw;
-    top: 0;
-    left: 0;
-}
-.title h1{
-    position: fixed;
-    color: white;
-    top: 5%;
-    left:0%;
-    width:60vw
-}
-.title p1{
-    position: fixed;
-    color: white;
-    top: 12%;
-    left:0%;
-    width:60vw
-}
-.resources{
-    position: absolute;
-    background-color: white;
-    height: 350px;
-    width: 250px;
-    border-radius: 3vh;
-    top:25vh;
-    box-shadow:0 0 6px rgba(0,0,0,0.2);
-}
-.circle{
-    display:flex;
-    height: 20%;
-    width: 25%;
-    border-radius: 50%;
-    background:#209A9D;
     justify-content: center;
-    text-align:center;
-    margin: auto;
-    margin-top:5%;
-    position:relative;
+    flex-flow: column;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    text-align: center;
 }
-.apps{
+.home .content h1{
+    font-size: 5rem;
     color: white;
-    font-size:4.5vh;
-    margin:auto;
+    padding: 0 1rem;
 }
-.boxResource{
-    text-align:center;
+.home .content p1{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 25rem;
 }
-h2{
-    color:#3B2665;
+.home .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-a{
-    color: #3B2665;
-}
-
-.button {
-    background: #209A9D;
-    font-size: medium;
-    padding:5px 20px;
-    margin: 3px;
-    border-radius: 1em;
-    border: none;
-    outline: none;
-    color: #3B2665;
-}
-.pill{
-    width: 80%;
-    display: inline-block;
+.home .box-container .box{
+    height: 10rem;
+    width: 8rem;
+    background: white;
+    text-align: center;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    margin: 2rem;
 }
 </style>
 
+<body>
+    <section class="home" id="home">
+        <div class="content">
+            <h1>AFTAC University</h1>
+            <p1>The Nation's Sixth Sense For Decisive Knowledge</p1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="material-symbols-outlined apps">apps</span>
+                <h2>Resources</h2>
+                <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
+                    <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
+                </a>
+            </div>
+
+            <div class="box">
+                <span class="material-symbols-outlined groups">groups</span>
+                <h2>The Team</h2>
+                <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
+                    <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
+                </a>
+            </div>
+
+            <div class="box">
+                <span class="material-symbols-outlined schools">school</span>
+                <h2>Courses</h2>
+                <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
+                    <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
