@@ -53,13 +53,54 @@ body{
     flex-wrap: wrap;
 }
 .home .box-container .box{
-    height: 10rem;
-    width: 8rem;
+    height: 27rem;
+    width: 18rem;
     background: white;
     text-align: center;
     border-radius: .5rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
     margin: 2rem;
+}
+.home .box-container .box span{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: #209A9D;
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+.home .box-container .box h2{
+    color: #3B2665;
+}
+.home .box-container .box .button{
+    height: 3rem;
+    width: 90%;
+    text-align: center;
+    background: #209A9D;
+    color: white;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin: .3rem;
+}
+.home .box-container .box .button:hover{
+    height: 3.25rem;
+    width: 90.25%;
+    transition: .2s;
+    font-size: 93%
+}
+.home::before{
+    content: '';
+    position: absolute;
+    bottom: -25%; left: 50%;
+    transform: translateX(-50%);
+    border-top: 70vh solid white;
+    width: 120%;
+    border-radius: 50%;
+    z-index: -1;
 }
 </style>
 
@@ -78,21 +119,42 @@ body{
                 <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
                     <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
                 </a>
+                <a href="https://www.youtube.com/watch?v=bLq38_7KtP0" target="_blank">
+                    <button class="button resource_pill2" type="button">Civilain Career Models</button>
+                </a>
+                <a href="https://myvector.us.af.mil/myvector/Home/Dashboard" target="_blank">
+                    <button class="button resource_pill3" type="button">MyVector</button>
+                </a>
+                <a href="https://www.airuniversity.af.edu/" target="_blank">
+                    <button class="button resource_pill4">Air University</button>
+                </a>
+                <a href="https://myfss.us.af.mil/USAFCommunity/s/knowledge-detail?pid=kA08300000002U7CAI" target="_blank">
+                    <button class="button resource_pill5" type="button">Civilian Tuition Assistance Program</button>
+                </a>
             </div>
 
             <div class="box">
                 <span class="material-symbols-outlined groups">groups</span>
                 <h2>The Team</h2>
-                <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
-                    <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
+                <a href="https://usaf.dps.mil/:w:/r/sites/AFTAC/AFTACU/_layouts/15/Doc.aspx?sourcedoc=%7b0AD4FA5D-5F1F-4719-BB37-3116DDDF821B%7d&file=Robinson%20Bio.docx&action=default&mobileredirect=true" target="_blank">
+                    <button class="button team_pill1" type="button">Mr. Christopher Robinson</button>
+                </a>
+                <a href="https://usaf.dps.mil/:p:/r/sites/AFTAC/AFTACU/_layouts/15/Doc.aspx?sourcedoc=%7bD24D2CA5-D134-4259-B577-186BEFAF5B71%7d&file=Workforce%20Development%20Team.pptx&action=edit&mobileredirect=true" target="_blank">
+                    <button class="button team_pill2" type="button">Ms. Agnes Bradt</button>
                 </a>
             </div>
 
             <div class="box">
                 <span class="material-symbols-outlined schools">school</span>
                 <h2>Courses</h2>
-                <a href="https://youtu.be/m5rJ4R5_v0A?si=pvp3UFJJ1CQTpVyH" target="_blank">
-                    <button class="button resource_pill1" type="button">BetterUp Coaching and Mentoring Program</button>
+                <a href="https://usaf.dps.mil/sites/AFTAC/AFTACU/SitePages/LEEP%20100.aspx" target="_blank">
+                    <button class="button courses_pill1" type="button">LEEP 100</button>
+                </a>
+                <a href="https://usaf.dps.mil/sites/AFTAC/AFTACU/SitePages/LEEP%20200.aspx" target="_blank">
+                    <button class="button courses_pill1" type="button">LEEP 200</button>
+                </a>
+                <a href="https://usaf.dps.mil/sites/AFTAC/AFTACU/SitePages/LEEP-300.aspx" target="_blank">
+                    <button class="button courses_pill1" type="button">LEEP 300</button>
                 </a>
             </div>
         </div>
